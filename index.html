@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be a Super Digital Citizen - Early Years LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- LMS Header -->
+        <header class="lms-header">
+            <div class="header-top">
+                <h1 class="title bounce">🌟 Be a Super Digital Citizen! 🌟</h1>
+                <p class="subtitle">Learn how to be safe, kind, and smart online!</p>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-section">
+            <div class="progress-label">Your Learning Journey</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text"><span id="progressText">0</span>% Complete</div>
+        </div>
+
+        <!-- Module Navigation (LMS Style) -->
+        <nav class="module-nav">
+            <button class="module-btn active" data-section="home" onclick="showSection('home')">
+                <span class="module-icon">🏠</span>
+                <span class="module-name">Home</span>
+            </button>
+            <button class="module-btn" data-section="learn" onclick="showSection('learn')">
+                <span class="module-icon">🎬</span>
+                <span class="module-name">Learn</span>
+            </button>
+            <button class="module-btn" data-section="resources" onclick="showSection('resources')">
+                <span class="module-icon">📚</span>
+                <span class="module-name">Resources</span>
+            </button>
+            <button class="module-btn" data-section="activities" onclick="showSection('activities')">
+                <span class="module-icon">🎮</span>
+                <span class="module-name">Activities</span>
+            </button>
+            <button class="module-btn" data-section="quiz" onclick="showSection('quiz')">
+                <span class="module-icon">✅</span>
+                <span class="module-name">Quiz</span>
+            </button>
+        </nav>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+            <h2>Welcome, Digital Citizens! <span class="wave">👋</span></h2>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <p>Did you know that when you use the internet, you become a <strong>Digital Citizen</strong>?</p>
+                    <p>A Digital Citizen is someone who:</p>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">🛡️</span>
+                            <p><strong>Stays Safe</strong></p>
+                            <p>Protects personal information</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">❤️</span>
+                            <p><strong>Is Kind</strong></p>
+                            <p>Treats others with respect</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🧠</span>
+                            <p><strong>Is Smart</strong></p>
+                            <p>Makes good choices online</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🤝</span>
+                            <p><strong>Shares Fairly</strong></p>
+                            <p>Respects others' things</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module-progress">
+                <p>📍 Module: Introduction</p>
+            </div>
+        </section>
+
+        <!-- LEARN SECTION -->
+        <section id="learn" class="section">
+            <h2>🎬 Watch and Learn Together!</h2>
+            
+            <div class="learn-container">
+                <!-- Added YouTube video placeholder with proper responsive sizing -->
+                <div class="video-wrapper">
+                    <p style="font-size: 1.1em; margin-bottom: 20px; color: var(--neutral-dark);">
+                        Watch this video to learn about being a great digital citizen! 
+                        Pay close attention - you'll need this information for the quiz later!
+                    </p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Bmz67ErIRa4" 
+                                allowfullscreen 
+                                title="Digital Citizenship Video"
+                                style="border: none;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Key Points Section -->
+                <div class="learning-module" style="margin-top: 30px;">
+                    <div style="background: #e8f5e9; padding: 20px; border-radius: 15px; border: 3px solid var(--success);">
+                        <h3 style="color: var(--success); font-size: 1.4em; margin-bottom: 15px;">Key Points to Remember: 📝</h3>
+                        <ul class="key-points-list">
+                            <li>Think before you post - once it's online, it's there forever!</li>
+                            <li>Never share personal information like your address or phone number</li>
+                            <li>Treat others online the way you want to be treated</li>
+                            <li>Tell a trusted adult if something makes you uncomfortable</li>
+                            <li>Your digital footprint matters - make it a positive one!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-progress">
+                <p>📍 Module: Watch & Learn</p>
+            </div>
+        </section>
+
+        <!-- RESOURCES SECTION -->
+        <section id="resources" class="section">
+            <h2>📚 Learning Resources</h2>
+            
+            <!-- Updated resources to match exact original content with links -->
+            <p style="font-size: 1.1em; margin-bottom: 25px; color: var(--neutral-dark);">
+                Explore these amazing resources to learn more about being safe and smart online!
+            </p>
+
+            <div class="resources-grid">
+                <div class="resource-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                    <span class="resource-emoji">🎮</span>
+                    <h3>Common Sense Media</h3>
+                    <p>Fun games and activities about digital citizenship!</p>
+                    <a href="https://www.commonsense.org/education/digital-citizenship" target="_blank" class="resource-link">
+                        → Explore Now
+                    </a>
+                </div>
+
+                <div class="resource-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    <span class="resource-emoji">🌐</span>
+                    <h3>eSafety Commissioner</h3>
+                    <p>Learn how to stay safe online with interactive guides!</p>
+                    <a href="https://www.esafety.gov.au/kids" target="_blank" class="resource-link">
+                        → Visit Site
+                    </a>
+                </div>
+
+                <div class="resource-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white;">
+                    <span class="resource-emoji">🎯</span>
+                    <h3>Be Internet Awesome</h3>
+                    <p>Google's program to help you be smart and safe online!</p>
+                    <a href="https://beinternetawesome.withgoogle.com/en_au" target="_blank" class="resource-link">
+                        → Start Learning
+                    </a>
+                </div>
+
+                <div class="resource-card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: white;">
+                    <span class="resource-emoji">📖</span>
+                    <h3>Digital Citizenship Poster</h3>
+                    <p>Colorful infographic about being a good digital citizen!</p>
+                    <a href="https://www.commonsensemedia.org/sites/default/files/featured-content/files/common_sense_digital_citizenship_poster.pdf" target="_blank" class="resource-link">
+                        → View Poster
+                    </a>
+                </div>
+            </div>
+
+            <div style="background: #f3e5f5; padding: 25px; border-radius: 15px; margin-top: 30px; border: 3px solid #9c27b0;">
+                <h3 style="color: #6a1b9a; margin-bottom: 15px; font-size: 1.2em;">💡 Quick Tips for Parents and Teachers</h3>
+                <p style="font-size: 1.05em; color: #333; line-height: 1.8;">
+                    These resources provide excellent support materials for discussing digital citizenship 
+                    at home and in the classroom. They align with educational curricula and include 
+                    age-appropriate content for primary students.
+                </p>
+            </div>
+
+            <div class="module-progress">
+                <p>📍 Module: Resources</p>
+            </div>
+        </section>
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities" class="section">
+            <h2>🎮 Interactive Activities!</h2>
+
+            <!-- Updated to include all 4 original scenarios with exact content -->
+            <p style="font-size: 1.1em; margin-bottom: 25px; color: var(--neutral-dark);">
+                Read each scenario and choose what a good digital citizen would do. 
+                Click on your answer to see if you're right!
+            </p>
+
+            <div class="activities-container">
+                <div class="activity-scenario">
+                    <h3>Scenario 1: 📱 The Friend Request</h3>
+                    <div class="scenario-content">
+                        <p><strong>What's happening?</strong></p>
+                        <p>You're playing an online game and someone you don't know sends you a friend request. 
+                           They say they're your age and want to chat.</p>
+                        <p><strong>What should you do?</strong></p>
+                        <div class="choice-buttons">
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Not safe! Never accept friend requests from strangers!')">
+                                Accept the request and start chatting
+                            </button>
+                            <button class="choice-btn correct-choice" onclick="checkChoice(this, true, '✅ Great choice! Tell a trusted adult - that\'s the safest thing to do!')">
+                                ✋ Don't accept and tell a trusted adult
+                            </button>
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Never share your phone number with people online!')">
+                                Give them your phone number
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-scenario">
+                    <h3>Scenario 2: 😢 The Mean Message</h3>
+                    <div class="scenario-content">
+                        <p><strong>What's happening?</strong></p>
+                        <p>You see someone posting mean comments about another student on social media.</p>
+                        <p><strong>What's the right thing to do?</strong></p>
+                        <div class="choice-buttons">
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Never join in with mean comments - be kind instead!')">
+                                Join in with more mean comments
+                            </button>
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Speaking up helps! Report it and tell an adult!')">
+                                Ignore it and don't do anything
+                            </button>
+                            <button class="choice-btn correct-choice" onclick="checkChoice(this, true, '✅ Perfect! You\'re being a responsible digital citizen!')">
+                                🚨 Report it and tell a trusted adult
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-scenario">
+                    <h3>Scenario 3: 🔐 The Password Question</h3>
+                    <div class="scenario-content">
+                        <p><strong>What's happening?</strong></p>
+                        <p>Your best friend asks if they can use your gaming account password because 
+                           they want to try out your game.</p>
+                        <p><strong>What should you say?</strong></p>
+                        <div class="choice-buttons">
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Passwords must be private - even for friends!')">
+                                Give them your password
+                            </button>
+                            <button class="choice-btn correct-choice" onclick="checkChoice(this, true, '✅ Excellent! Passwords should always stay secret!')">
+                                🔒 No, passwords should be private
+                            </button>
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Passwords are secret! Don\'t share them, even with a secret promise!')">
+                                Share it but ask them not to tell anyone
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-scenario">
+                    <h3>Scenario 4: 📸 The Photo Post</h3>
+                    <div class="scenario-content">
+                        <p><strong>What's happening?</strong></p>
+                        <p>You took a funny photo of your friend at lunch. They look silly in the picture. 
+                           Should you post it online?</p>
+                        <p><strong>What's the right choice?</strong></p>
+                        <div class="choice-buttons">
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Always ask first! Respect your friends\' feelings!')">
+                                Yes, it's funny so post it immediately
+                            </button>
+                            <button class="choice-btn correct-choice" onclick="checkChoice(this, true, '✅ You got it! Always ask before posting photos of others!')">
+                                🤝 Ask your friend first if it's okay
+                            </button>
+                            <button class="choice-btn" onclick="checkChoice(this, false, '❌ Tagging without permission isn\'t kind - always ask first!')">
+                                Post it and tag them so everyone sees
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-progress">
+                <p>📍 Module: Interactive Activities</p>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz" class="section">
+            <h2>✅ Test Your Knowledge!</h2>
+
+            <!-- Updated to include all 10 original quiz questions -->
+            <div class="quiz-container">
+                <div class="quiz-instructions">
+                    <p>🎯 Answer these 10 questions to test what you learned!</p>
+                    <p>Try to get them all right!</p>
+                </div>
+
+                <form id="quizForm" onsubmit="submitQuiz(event)">
+                    <div class="quiz-question">
+                        <p><strong>Q1:</strong> What does it mean to be a digital citizen?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="wrong">
+                                Only using computers at school
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="correct">
+                                Using technology in a safe, respectful, and responsible way
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="wrong">
+                                Playing video games every day
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q2:</strong> Which information should you NEVER share online?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="wrong">
+                                Your favorite color
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="correct">
+                                Your home address and phone number
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="wrong">
+                                Your favorite movie
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q3:</strong> What is a digital footprint?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="wrong">
+                                The size of your computer screen
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="wrong">
+                                A picture of your foot
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="correct">
+                                The trail of information you leave behind when using the internet
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q4:</strong> If someone online makes you feel uncomfortable, you should:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="wrong">
+                                Keep it a secret
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="correct">
+                                Tell a trusted adult immediately
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="wrong">
+                                Reply with mean messages
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q5:</strong> Cyberbullying is:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="correct">
+                                Being mean to someone using technology
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="wrong">
+                                A fun game to play online
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="wrong">
+                                Okay if you're just joking
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q6:</strong> A strong password should:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="wrong">
+                                Be your name or birthday
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="wrong">
+                                Be shared with all your friends
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="correct">
+                                Be unique and kept private
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q7:</strong> Before posting a photo of someone else, you should:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="wrong">
+                                Post it immediately
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="correct">
+                                Ask their permission first
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="wrong">
+                                Only post it if they look silly
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q8:</strong> What should you do if you see someone being bullied online?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="wrong">
+                                Join in with the bullying
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="wrong">
+                                Ignore it completely
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="correct">
+                                Report it and support the person being bullied
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q9:</strong> It's safe to meet an online friend in person if:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="wrong">
+                                You've been chatting for a few weeks
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="wrong">
+                                They seem really nice
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="correct">
+                                You should never meet online friends without a trusted adult present
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>Q10:</strong> Being a good digital citizen means:</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="wrong">
+                                Spending all day on screens
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="correct">
+                                Being kind, safe, and responsible online
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="wrong">
+                                Only caring about yourself
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">📊 See My Score!</button>
+                </form>
+
+                <div id="quizResults" class="quiz-results">
+                    <h3>🎉 Your Results!</h3>
+                    <div class="score-display">
+                        <p>You got <span id="scoreValue">0</span> out of 10 correct!</p>
+                    </div>
+                    <div id="resultMessage" class="result-message"></div>
+                    <button class="retry-btn" onclick="retakeQuiz()">🔄 Try Again</button>
+                </div>
+            </div>
+
+            <div class="module-progress">
+                <p>📍 Module: Knowledge Check</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="lms-footer">
+            <p>🌍 Stay Safe • Be Kind • Make Smart Choices • Have Fun Learning! 🌍</p>
+            <p>Remember: You're an awesome Digital Citizen! 🌟</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
